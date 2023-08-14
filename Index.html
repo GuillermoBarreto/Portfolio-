@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f6d200a54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+         <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Front - End Web Developer</p>
+            <h1>Hi, I'm <span>Guillermo Barreto</span><br>From Venezuela</h1>
+         </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Embarking on a journey to find a new entry-level frontend position, I am Guillermo Barreto, a dedicated web enthusiast with a passion for creating captivating digital experiences. My quest to secure a role in frontend development is driven by a desire to blend creativity and technology seamlessly. Having honed my skills in HTML, CSS, and JavaScript, I am ready to apply my knowledge and collaborate with a forward-thinking team. As I navigate this exciting path, I am eager to contribute my fresh perspective and willingness to learn to a team that values innovation and growth. With an eye for design and a determination to thrive, I am excited to embark on this new chapter, ready to shape the future of web development and create impactful online journeys. Let’s connect and explore how I can be a valuable addition to your team.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+
+                            <li><span>Front - End</span><br>Web Development</li>
+                            <li><span>Software Development</span><br>Developer</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+
+                            <li><span>2022 - Current</span><br>Amazon.com <br>Amnesty Associate</li>
+                            <li><span>2022 - 2023</span><br>Amazon.com <br>Problem Solver Associate</li>
+                            <li><span>2020 - 2021</span><br>Sokol company <br>Warehouse Associate</li>
+                            <li><span>2020 - 2022</span><br>Longhorn Steak House<br>Chef</li>
+                            <li><span>2016 - 2019</span><br>PetWorld Veterinaria <br>Web Designer/Community Manager</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            
+                            <li><span>Graduate</span><br>Kenzie Academy <br>Certificate Front - End Web Development</li>
+                            <li><span>2018 - 2022</span><br>Catholic University Of Tachira <br>Bachelor of Business Administration in Marketing</li>
+                            <li><span>2017 - 2020</span><br>Gastronomic Institute of Tachira <br>Bachelor's in Culinary Arts</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------- Services------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>create functional, user-friendly websites and web applications.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Software Developer</h2>
+                    <p>use programming and design knowledge to build software that meets the needs of users.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>make products, services, and technology usable, enjoyable, and accessible for humans.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- -----------------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h4>Calculator</h4>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-calculator"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h5>Cellphone</h5>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-mobile-screen-button"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ---------------------------contact--------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Guilleelias25@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7082626650</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/GuillermoBarretoResume.pdf"Download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-left"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Easy project for</i> Portfolio</p>
+    </div>
+</div>
+    
+<script>
+</script>
+
+</body>
+</html>
